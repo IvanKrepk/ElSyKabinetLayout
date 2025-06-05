@@ -1,0 +1,6 @@
+@import "common.css";
+
+.reports-info-element {
+    display: flex;
+    flex-direction: column;
+}
