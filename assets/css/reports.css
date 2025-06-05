@@ -1,6 +1,32 @@
 @import "common.css";
 
+.reports-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*#region reports-info-element*/ 
+
 .reports-info-element {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 1.1em 10px;
+    min-width: 164px;
+    width: 20%
 }
+
+.reports-info-element-title {
+    display: flex;
+    margin-bottom: 0.8em;
+}
+
+.reports-info-element-title svg {
+    width: 1em;
+    margin-right: 5px;
+}
+
+/*#endregion*/
