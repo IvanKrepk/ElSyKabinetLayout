@@ -98,15 +98,22 @@
                 </div>
             </div>
             <div class="row reports-row">
-                <div class="reports-row-element">
-                    <svg class="daterangepicker_element_icon" viewBox="-200 -200 1500 1500" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M128 384v512h768V192H768v32a32 32 0 1 1-64 0v-32H320v32a32 32 0 0 1-64 0v-32H128v128h768v64H128zm192-256h384V96a32 32 0 1 1 64 0v32h160a32 32 0 0 1 32 32v768a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V160a32 32 0 0 1 32-32h160V96a32 32 0 0 1 64 0v32zm-32 384h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm192-192h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm192-192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64z"></path>
-                    </svg>
-                    <input type="text" placeholder="Введите период..."/>
+                <div class="reports-row-element date-period">
+                    <div class="date-period-input">
+                        <svg class="date-period-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M128 384v512h768V192H768v32a32 32 0 1 1-64 0v-32H320v32a32 32 0 0 1-64 0v-32H128v128h768v64H128zm192-256h384V96a32 32 0 1 1 64 0v32h160a32 32 0 0 1 32 32v768a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V160a32 32 0 0 1 32-32h160V96a32 32 0 0 1 64 0v32zm-32 384h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm192-192h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm192-192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64zm0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64z"/>
+                        </svg>
+                        <span>Введите период...</span>
+                    </div>
+                    <div class="button-common">
+                        <svg class="date-period-refresh-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M784.512 230.272v-50.56a32 32 0 1 1 64 0v149.056a32 32 0 0 1-32 32H667.52a32 32 0 1 1 0-64h92.992A320 320 0 1 0 524.8 833.152a320 320 0 0 0 320-320h64a384 384 0 0 1-384 384 384 384 0 0 1-384-384 384 384 0 0 1 643.712-282.88z"></path>
+                        </svg>
+                    </div>
                 </div>
                 
-                <div class="reports-row-element dropdown">
-                    <button for="cbAFSs" class="dropdown-title">
+                <div class="reports-row-element dropdown dropdown-closed">
+                    <button class="dropdown-title">
                         <span class="dropdown-current-value">Все АЗС</span>
                         <div class="dropdown-arrow">
                         </div>
@@ -118,6 +125,40 @@
                             <li><span class="dropdown-item-value">АЗС 2</span></li>
                             <li><span class="dropdown-item-value">АЗС 3</span></li>
                             <li><span class="dropdown-item-value">АЗС 4</span></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="reports-row-element dropdown dropdown-closed">
+                    <button class="dropdown-title">
+                        <span class="dropdown-current-value">Все нефтепродукты</span>
+                        <div class="dropdown-arrow">
+                        </div>
+                    </button>
+                    <ul class="dropdown-scroll">
+                        <div class="dropdown-scroll-view">
+                            <li><span class="dropdown-item-value">Все нефтепродукты</span></li>
+                            <li><span class="dropdown-item-value">АИ-80</span></li>
+                            <li><span class="dropdown-item-value">АИ-92</span></li>
+                            <li><span class="dropdown-item-value">АИ-95</span></li>
+                            <li><span class="dropdown-item-value">ДТ лет</span></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="reports-row-element dropdown dropdown-closed">
+                    <button class="dropdown-title">
+                        <span class="dropdown-current-value">Все счета</span>
+                        <div class="dropdown-arrow">
+                        </div>
+                    </button>
+                    <ul class="dropdown-scroll">
+                        <div class="dropdown-scroll-view">
+                            <li><span class="dropdown-item-value">Все счета</span></li>
+                            <li><span class="dropdown-item-value">счет 1</span></li>
+                            <li><span class="dropdown-item-value">счет 2</span></li>
+                            <li><span class="dropdown-item-value">счет 3</span></li>
+                            <li><span class="dropdown-item-value">счет 4</span></li>
                         </div>
                     </ul>
                 </div>

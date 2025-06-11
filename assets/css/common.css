@@ -185,6 +185,7 @@ footer #footerVersion {
 .button-common {
     position: relative;
     cursor: pointer;
+    display: flex;
     background-color: var(--color-background-button-common);
     padding: 5px;
     border-radius: 5px;
@@ -300,6 +301,31 @@ footer #footerVersion {
 .dropdown .current-item {
     font-weight: bold;
     background-color: rgba(0,0,0,0.03);;
+}
+
+/*#endregion*/
+
+/*#region date-period*/
+
+.date-period {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--color-border);
+}
+
+.date-period .date-period-input {
+    cursor: pointer;
+    display: flex;
+    margin-left: 5px;
+}
+
+.date-period svg {
+    width: 1.2em;
+}
+
+.date-period .date-period-icon {
+    margin-right: 5px;
 }
 
 /*#endregion*/
