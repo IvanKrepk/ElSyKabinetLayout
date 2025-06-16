@@ -11,6 +11,7 @@
     --color-background-thumb: var(--color-background-button-common);
 
     --color-primary: rgb(247, 247, 247);
+    --color-inactive: grey;
     --color-secondary: rgb(22, 22, 22);
     
     --color-border: rgba(135, 138, 146, 0.3);
@@ -317,7 +318,13 @@ footer #footerVersion {
 .date-period .date-period-input {
     cursor: pointer;
     display: flex;
-    margin-left: 5px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.date-period .date-period-value {
+    color: var(--color-inactive);
 }
 
 .date-period svg {
@@ -325,7 +332,11 @@ footer #footerVersion {
 }
 
 .date-period .date-period-icon {
-    margin-right: 5px;
+    margin: 0 5px;
+}
+
+.date-period .date-period-refresh {
+    fill: var(--color-inactive);
 }
 
 /*#endregion*/
