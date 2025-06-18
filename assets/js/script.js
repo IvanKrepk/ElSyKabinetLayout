@@ -134,6 +134,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let dateRangePicker = $(datePeriodInput).data('daterangepicker');
         let btnRefresh = datePeriod.querySelector('.date-period-refresh');
 
+        $(datePeriodInput).on('show.daterangepicker', function(ev, picker) {  
+            datePeriod.style.boxShadow = "0px 0px 4px 1px var(--color-box-shadow)";
+        });
+        
+        $(datePeriodInput).on('hide.daterangepicker', function(ev, picker) {  
+            datePeriod.style.boxShadow = "none";
+        });
+
         dateRangePicker.callback = function() {
             let startDate = dateRangePicker.startDate.format("YYYY/MM/DD");
             let endDate = dateRangePicker.endDate.format("YYYY/MM/DD");
