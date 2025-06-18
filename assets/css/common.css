@@ -17,6 +17,8 @@
     --color-border: rgba(135, 138, 146, 0.3);
     --color-border-hover: rgba(135, 138, 146, 1);
     --color-border-focus: rgb(134, 151, 238);
+
+    --color-box-shadow: rgba(34, 60, 80, 0.15); 
 }
 
 * {
@@ -261,7 +263,8 @@ footer #footerVersion {
     border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.15);
+    box-shadow: 0px 0px 4px 1px var(--color-box-shadow),
+                0px -1.8em 4px 1px var(--color-box-shadow);
     overflow-y: auto;
     z-index: 2;
     margin: 0;
@@ -282,6 +285,10 @@ footer #footerVersion {
     padding: 5px;
     border: 1px solid rgba(0,0,0,0.02);
     width: 100%;
+}
+
+.dropdown ul li .dropdown-item-value {
+    user-select: none;
 }
 
 .dropdown ul li:hover {

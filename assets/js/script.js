@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
         //#region focus
 
         title.addEventListener("focus", () => {
-            title.style.boxShadow = "0px 0px 4px 1px rgba(34, 60, 80, 0.15)";
             title.style.borderColor = "var(--color-border-focus)";
             list.style.borderColor = "var(--color-border-focus)";
         });
 
         title.addEventListener("blur", () => {
-            title.style.boxShadow = "none";
             title.style.borderColor = "var(--color-border)";
             list.style.borderColor = "var(--color-border)";
 
