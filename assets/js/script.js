@@ -56,6 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
         title.addEventListener("click", () => {
             dropdown.classList.toggle("dropdown-closed");
             scrollView.style.width = `${list.scrollWidth}px`;
+            listItems.forEach(item => {
+                if (item.classList.contains('current-item')) {
+                    item.scrollIntoView();
+                }
+            });
         });
 
         //#region select item

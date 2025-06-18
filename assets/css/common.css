@@ -264,10 +264,17 @@ footer #footerVersion {
     box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.15);
     overflow-y: auto;
     z-index: 2;
+    margin: 0;
+    padding: 0;
 }
 
 .dropdown.dropdown-closed ul {
     display: none;
+}
+
+.dropdown-scroll-view {
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown ul li {
@@ -301,7 +308,7 @@ footer #footerVersion {
 
 .dropdown .current-item {
     font-weight: bold;
-    background-color: rgba(0,0,0,0.03);;
+    background-color: rgba(0,0,0,0.03);
 }
 
 /*#endregion*/
