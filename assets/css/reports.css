@@ -5,7 +5,7 @@
     margin-top: 20px;
 }
 
-.reports-row-element {
+.reports-row .reports-row-element {
     min-width: 13.5em;
     width: 20%;
     border-radius: 5px;
@@ -13,7 +13,7 @@
     margin-right: 20px;
 }
 
-.reports-row-element:last-child {
+.reports-row .reports-row-element:last-child {
     margin-right: 0px;
 }
 
@@ -27,12 +27,12 @@
     border: 1px solid var(--color-border);
 }
 
-.reports-info-element-title {
+.reports-info-element .reports-info-element-title {
     display: flex;
     margin-bottom: 0.8em;
 }
 
-.reports-info-element-title svg {
+.reports-info-element .reports-info-element-title svg {
     width: 1em;
     margin-right: 5px;
 }

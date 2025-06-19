@@ -56,17 +56,17 @@ header h1 svg {
     width: 1.6em;
 }
 
-.header-login-panel {
+header .header-login-panel {
     display: flex;
     align-items: center;
     margin-right: 10px;
 }
 
-.header-login-panel svg {
+header .header-login-panel svg {
     width: 1.2em;
 }
 
-.header-login-panel .login-element {
+header .header-login-panel .login-element {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -75,15 +75,15 @@ header h1 svg {
     border-radius: 15px;
 }
 
-.header-login-panel .login-element:first-child {
+header .header-login-panel .login-element:first-child {
     margin-left: 0;
 }
 
-.header-login-panel .login-element:last-child {
+header .header-login-panel .login-element:last-child {
     margin-right: 0;
 }
 
-.header-login-panel .login-element:hover {
+header .header-login-panel .login-element:hover {
     fill: var(--color-secondary);
     color: var(--color-secondary);
     background-color: var(--color-primary);
@@ -141,7 +141,7 @@ nav ul li a span {
     z-index: 1;
 }
 
-.nav-item-selected {
+nav ul li a.nav-item-selected {
     background-color: var(--color-secondary);
     color: var(--color-primary);
     fill: var(--color-primary);
@@ -180,7 +180,7 @@ footer #footerVersion {
 /*#endregion*/
 
 .page-content {
-    width: 70%;
+    max-width: 1024px;
 }
 
 /*#region button-common*/ 
@@ -253,7 +253,7 @@ footer #footerVersion {
     margin-right: 5px;
 }
 
-.dropdown ul {
+.dropdown .dropdown-scroll {
     position: absolute;
     top: 100%;
     width: 100%;
@@ -271,49 +271,49 @@ footer #footerVersion {
     padding: 0;
 }
 
-.dropdown.dropdown-closed ul {
+.dropdown.dropdown-closed .dropdown-scroll {
     display: none;
 }
 
-.dropdown-scroll-view {
+.dropdown .dropdown-scroll .dropdown-scroll-view {
     display: flex;
     flex-direction: column;
 }
 
-.dropdown ul li {
+.dropdown .dropdown-scroll .dropdown-scroll-view li {
     cursor: pointer;
     padding: 5px;
     border: 1px solid rgba(0,0,0,0.02);
     width: 100%;
 }
 
-.dropdown ul li .dropdown-item-value {
+.dropdown .dropdown-scroll .dropdown-scroll-view li .dropdown-item-value {
     user-select: none;
 }
 
-.dropdown ul li:hover {
+.dropdown .dropdown-scroll .dropdown-scroll-view li:hover {
     background-color: var(--color-background-hover);
 }
 
-.dropdown ul::-webkit-scrollbar {
+.dropdown .dropdown-scroll::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
 
-.dropdown ul::-webkit-scrollbar-track {
+.dropdown .dropdown-scroll::-webkit-scrollbar-track {
     background-color: var(--color-background-track);
 }
 
-.dropdown ul::-webkit-scrollbar-thumb {
+.dropdown .dropdown-scroll::-webkit-scrollbar-thumb {
     background-color: var(--color-background-thumb);
     border-radius: 3px;
 }
 
-.dropdown ul::-webkit-scrollbar-corner {
+.dropdown .dropdown-scroll::-webkit-scrollbar-corner {
     border-radius: 5px;
 }
 
-.dropdown .current-item {
+.dropdown .dropdown-scroll .dropdown-scroll-view li.current-item {
     font-weight: bold;
     background-color: rgba(0,0,0,0.03);
 }
@@ -329,6 +329,10 @@ footer #footerVersion {
     border: 1px solid var(--color-border);
 }
 
+.date-period svg {
+    width: 1.2em;
+}
+
 .date-period .date-period-input {
     cursor: pointer;
     display: flex;
@@ -337,15 +341,11 @@ footer #footerVersion {
     height: 100%;
 }
 
-.date-period .date-period-value {
+.date-period .date-period-input .date-period-value {
     color: var(--color-inactive);
 }
 
-.date-period svg {
-    width: 1.2em;
-}
-
-.date-period .date-period-icon {
+.date-period .date-period-input .date-period-icon {
     margin: 0 5px;
 }
 
