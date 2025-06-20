@@ -39,4 +39,69 @@
 
 /*#endregion*/
 
+/*#region reports-spoilers*/
 
+.reports-spoilers {
+    margin-top: 25px;
+}
+
+.reports-spoiler {
+    margin-top: 10px;
+}
+
+.reports-spoiler:first-child {
+    margin-top: 0px;
+}
+
+.reports-spoiler .spoiler-title {
+    display: block;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+}
+
+.reports-spoiler .spoiler-title:hover {
+    border: 1px solid var(--color-border-hover);
+}
+
+.reports-spoiler .spoiler-checkbox:checked+.spoiler-title {
+    background-color: var(--color-background-third);
+}
+
+.reports-spoiler .spoiler-area {
+    list-style: none;
+}
+
+.reports-spoiler .spoiler-area .reports-spoiler-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.reports-spoiler .spoiler-area .reports-spoiler-item:hover {
+    background-color: var(--color-background-secondary);
+}
+
+.reports-spoiler .spoiler-area .reports-spoiler-item .reports-spoiler-item-name {
+    font-weight: bold;
+}
+
+.reports-spoiler .spoiler-area .reports-spoiler-item .reports-spoiler-item-operations {
+    display: flex;
+}
+
+.reports-spoiler .spoiler-area .reports-spoiler-item .reports-spoiler-item-operations .reports-spoiler-item-show-btn {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-background-primary);
+    color: var(--color-primary);
+    margin-right: 5px;
+}
+
+/*#endregion*/

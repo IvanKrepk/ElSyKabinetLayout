@@ -320,6 +320,24 @@ footer #footerVersion {
 
 /*#endregion*/
 
+/*#region spoiler*/
+
+.spoiler {
+    position: relative;
+}
+
+.spoiler .spoiler-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.spoiler .spoiler-checkbox:checked~.spoiler-area {
+    display: none;
+}
+
+/*#endregion*/
+
 /*#region date-period*/
 
 .date-period {
@@ -350,6 +368,12 @@ footer #footerVersion {
 }
 
 .date-period .date-period-refresh {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
     fill: var(--color-inactive);
 }
 
