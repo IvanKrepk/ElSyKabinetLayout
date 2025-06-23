@@ -1,14 +1,16 @@
+'use strict';
+
 document.addEventListener("DOMContentLoaded", () => {
     
     //#region  "report-filter-dropdown" class
 
     let filterDropdowns = document.querySelectorAll(".reports-filter-dropdown");
     filterDropdowns.forEach(filterDropdown => {
-        dropdownTitle = filterDropdown.querySelector(".dropdown-title");
-        currentValue = dropdownTitle.querySelector(".reports-filter-dropdown-current-value");
-        dropdownArea = filterDropdown.querySelector(".dropdown-area");
-        dropdownItems = dropdownArea.querySelectorAll(".dropdown-item");
-
+        let dropdownTitle = filterDropdown.querySelector(".dropdown-title");
+        let currentValue = dropdownTitle.querySelector(".reports-filter-dropdown-current-value");
+        let dropdownArea = filterDropdown.querySelector(".dropdown-area");
+        let dropdownItems = dropdownArea.querySelectorAll(".dropdown-item");
+        let titleChangableItems = dropdownArea.querySelectorAll(".title-changable-item");
         let isDropdownAreaHover = false;
 
         dropdownArea.addEventListener("mouseenter", () => {
@@ -26,16 +28,20 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        dropdownItems.forEach(dropdownItem => {
-            dropdownItem.addEventListener("click", () => {
-                currentValue.textContent = dropdownItem.textContent;
+        titleChangableItems.forEach(titleChangableItem => {
+            titleChangableItem.addEventListener("click", () => {
+                currentValue.textContent = titleChangableItem.textContent;
                 
                 dropdownItems.forEach(item => {
                     item.classList.remove("selected-item")
                 });
-                dropdownItem.classList.add("selected-item");
-                dropdownItem.scrollIntoView();
+                titleChangableItem.classList.add("selected-item");
+                titleChangableItem.scrollIntoView();
+            });    
+        });
 
+        dropdownItems.forEach(dropdownItem => {
+            dropdownItem.addEventListener("click", () => {
                 if (!filterDropdown.classList.contains("dropdown-closed")) {
                     filterDropdown.classList.add("dropdown-closed");
                 }
