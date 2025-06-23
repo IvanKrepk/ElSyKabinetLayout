@@ -4,6 +4,7 @@
     --color-background-third: rgb(233, 233, 233);
 
     --color-background-hover: rgba(0, 0, 0, 0.2);
+    --color-background-selected: rgba(0, 0, 0, 0.05);
 
     --color-background-button-common: rgb(204, 204, 204);
     
@@ -16,7 +17,7 @@
     
     --color-border: rgba(135, 138, 146, 0.3);
     --color-border-hover: rgba(135, 138, 146, 1);
-    --color-border-focus: rgb(134, 151, 238);
+    --color-border-focus: rgb(175, 199, 231);
 
     --color-box-shadow: rgba(34, 60, 80, 0.15); 
 }
@@ -215,6 +216,34 @@ footer #footerVersion {
 .dropdown {
     position: relative;
     display: flex;
+    flex-direction: row;
+}
+
+.dropdown .dropdown-title {
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+.dropdown.dropdown-closed  .dropdown-area {
+    display: none;
+}
+
+.dropdown .dropdown-area {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.dropdown .dropdown-area .dropdown-item {
+    cursor: pointer;
+    list-style: none;
+}
+
+/* .dropdown {
+    position: relative;
+    display: flex;
     flex-direction: column;
     height: fit-content;
     --dropdown-font: font;
@@ -316,7 +345,7 @@ footer #footerVersion {
 .dropdown .dropdown-scroll .dropdown-scroll-view li.current-item {
     font-weight: bold;
     background-color: rgba(0,0,0,0.03);
-}
+} */
 
 /*#endregion*/
 

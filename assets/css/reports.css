@@ -105,3 +105,93 @@
 }
 
 /*#endregion*/
+
+/*#region reports-filter-dropdown*/
+
+.reports-filter-dropdown.dropdown .dropdown-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    z-index: 6;
+}
+
+.reports-filter-dropdown.dropdown .dropdown-title:focus {
+    border-color: var(--color-border-focus);
+    border-bottom-color: var(--color-border);
+}
+
+.reports-filter-dropdown.dropdown.dropdown-closed .dropdown-title:focus {
+    border-color: var(--color-border-focus);
+}
+
+.reports-filter-dropdown.dropdown.dropdown-closed .dropdown-title {
+    border-radius: 5px;
+}
+
+.reports-filter-dropdown.dropdown .dropdown-area {
+    border: 1px solid var(--color-border);
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: scroll;
+    z-index: 5;
+}
+
+.reports-filter-dropdown.dropdown .dropdown-title:focus~.dropdown-area {
+    border-color: var(--color-border-focus);
+    box-shadow: 0px 0px 4px 1px var(--color-box-shadow)
+}
+
+.reports-filter-dropdown.dropdown .dropdown-title .reports-filter-dropdown-current-value {
+    padding: 0 5px;
+}
+
+.reports-filter-dropdown.dropdown .dropdown-title .reports-filter-dropdown-arrow {
+    --size: 0.4em;
+    position: relative;
+    top: 0.3em;
+    border-top: var(--size) solid black;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid transparent;
+    margin-right: 5px;
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area .dropdown-item {
+    padding: 5px;
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area .dropdown-item.selected-item {
+    font-weight: bold;
+    background-color: var(--color-background-selected);
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area .dropdown-item:hover {
+    background-color: var(--color-background-hover);
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area::-webkit-scrollbar-track {
+    background-color: var(--color-background-track);
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area::-webkit-scrollbar-thumb {
+    background-color: var(--color-background-thumb);
+    border-radius: 3px;
+}
+
+.dropdown.reports-filter-dropdown .dropdown-area::-webkit-scrollbar-corner {
+    border-radius: 5px;
+}
+
+/*#endregion*/
