@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     //#region  "report-filter-dropdown" class
 
-    let filterDropdowns = document.querySelectorAll(".reports-filter-dropdown");
+    let filterDropdowns = document.querySelectorAll(".reports-dropdown");
     filterDropdowns.forEach(filterDropdown => {
         let dropdownTitle = filterDropdown.querySelector(".dropdown-title");
-        let currentValue = dropdownTitle.querySelector(".reports-filter-dropdown-current-value");
+        let currentValue = dropdownTitle.querySelector(".reports-dropdown-current-value");
         let dropdownArea = filterDropdown.querySelector(".dropdown-area");
         let dropdownItems = dropdownArea.querySelectorAll(".dropdown-item");
         let titleChangableItems = dropdownArea.querySelectorAll(".title-changable-item");
