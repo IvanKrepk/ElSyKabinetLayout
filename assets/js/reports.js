@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    //#region  "report-filter-dropdown" class
+    //#region  "report-dropdown" class
 
     let filterDropdowns = document.querySelectorAll(".reports-dropdown");
     filterDropdowns.forEach(filterDropdown => {
